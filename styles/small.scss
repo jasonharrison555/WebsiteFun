@@ -1,0 +1,27 @@
+@media (max-width: 500px) {
+  
+    .page {
+        background-color: $second-color;
+        color: $third-color;
+        grid-column: 2;
+        border-radius: 15px;
+        border: none;
+        width: 400px;
+        
+    .heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+        .group-button {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        img {
+            width: 30%;
+        }
+    }
+}

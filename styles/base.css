@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Cantata+One&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: grid;
+  grid-template-columns: 500px 1fr 500px;
+  grid-template-rows: 700px;
+}
+
+.page {
+  background-color: rgb(175, 93, 99);
+  color: rgb(255, 191, 129);
+  grid-column: 2;
+  border-radius: 15px;
+}
+.page .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.page .group-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.page button:hover {
+  background-color: rgb(255, 191, 129);
+  color: rgb(175, 93, 99);
+  transition: 0.5s;
+}
+.page button {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  background-color: rgb(70, 70, 125);
+  color: rgb(255, 191, 129);
+  border: none;
+  width: 60%;
+  padding: 10px 10px;
+  margin: 10px 30px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.page header {
+  font-family: "Bangers", system-ui;
+  font-size: 2.625rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1%;
+  font-size: 2.625rem;
+}
+.page img {
+  width: 20%;
+}
+.page p {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  background-color: rgb(70, 70, 125);
+  line-height: 2;
+  padding: 10px 20px 10px 20px;
+}
+.page #result:empty {
+  display: none;
+}
+
+#word {
+  color: rgb(175, 93, 99);
+  font-style: italic;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=base.css.map */

@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Cantata+One&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 50px;
+}
+
+.page {
+  padding: 30px 0 30px 0;
+  background-color: rgb(175, 93, 99);
+  color: rgb(255, 191, 129);
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+}
+.page .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.page .group-button {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center; /* 👈 horizontal centering */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.page button:hover {
+  background-color: rgb(255, 191, 129);
+  color: rgb(175, 93, 99);
+  transition: 0.5s;
+}
+.page button {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 200;
+  background-color: rgb(70, 70, 125);
+  color: rgb(255, 191, 129);
+  border: none;
+  width: 60%;
+  padding: 10px 10px;
+  font-weight: 700;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+}
+.page header {
+  font-family: "Bangers", system-ui;
+  font-size: 2.625rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1%;
+  font-size: 78px;
+}
+.page img {
+  width: 20%;
+}
+.page p {
+  font-family: "Sour Gummy", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 200;
+  background-color: rgb(70, 70, 125);
+  line-height: 2;
+  padding: 10px 20px 10px 20px;
+}
+.page #result:empty {
+  display: none;
+}
+
+#word {
+  color: rgb(175, 93, 99);
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .page {
+    background-color: rgb(175, 93, 99);
+    color: rgb(255, 191, 129);
+    grid-column: 2;
+    border-radius: 15px;
+    border: 5px solid blue;
+  }
+  .page .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .page .group-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center; /* 👈 horizontal centering */
+    align-items: center;
+  }
+  .page img {
+    width: 20%;
+  }
+  .page header {
+    font-size: 2.625rem;
+  }
+}
+@media (max-width: 500px) {
+  .page {
+    background-color: rgb(175, 93, 99);
+    color: rgb(255, 191, 129);
+    grid-column: 2;
+    border-radius: 15px;
+    border: none;
+    width: 400px;
+  }
+  .page .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .page .group-button {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .page img {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

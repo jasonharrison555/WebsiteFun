@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cantata+One&family=Permanent+Marker&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary-color: rgb(70, 70, 125);
+$second-color: rgb(175, 93, 99);
+$third-color: rgb(255, 191, 129);
+$font-p: 1rem;
+$font-sub: 1.625rem;
+$font-heading: 2.625rem;
+
+@mixin paragraph-style {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: $font-sub;
+    font-weight: 200;
+}
+
+@mixin heading-style {
+    font-family: "Bangers", system-ui;
+    font-size: $font-heading;
+    font-weight: 500;
+    
+}
+@mixin button {
+        @include paragraph-style;
+        background-color: $primary-color;
+        color: $third-color;
+        border: none;
+        width: 60%;
+        padding: 10px 10px;
+        font-weight: 700;
+        border-radius: 10px;
+        height: 50px;
+        width: 100%;
+        
+}
+
+@mixin button-hover {
+        background-color: $third-color;
+        color: $second-color;
+        transition: 0.5s;
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+width: 80%;
+padding-top: 50px;
+}
+
+.page {
+   padding: 30px 0 30px 0;
+    background-color: $second-color;
+    color: $third-color;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+    .group-button {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;  /* 👈 horizontal centering */
+        align-items: center;  
+        gap: 20px;
+        padding: 20px;
+
+    }
+
+       button:hover {
+        @include button-hover;
+    }
+
+    button{
+        
+        @include button;
+    }
+ 
+
+    header{
+        @include heading-style;
+        text-align: center;
+        padding: 1%;
+        font-size: 78px;
+    }
+
+    img {
+  
+        width: 20%;
+    }
+    p {
+        @include paragraph-style;
+        background-color: $primary-color;
+        line-height: 2;
+        padding: 10px 20px 10px 20px;
+    }
+    #result:empty {
+    display: none;
+    }
+}
+
+#word {
+    color: $second-color;
+    font-style: italic;
+    font-weight: 700;
+}
