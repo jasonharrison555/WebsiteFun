@@ -5,7 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
   padding-top: 50px;
 }
 
@@ -98,7 +98,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    justify-items: center; /* 👈 horizontal centering */
+    justify-items: center;
     align-items: center;
   }
   .page img {
@@ -130,6 +130,9 @@ body {
   }
   .page img {
     width: 30%;
+  }
+  .page p {
+    font-size: 1rem;
   }
 }
 

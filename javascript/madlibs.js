@@ -92,33 +92,79 @@ In the end, everything chose to ${verbs[5]}.`;
 
 function story2(){   
 
-    const words = {
-        adjective: prompt("Enter an adjective:"),
-        animal: prompt("Enter an animal:"),
-        noun: prompt("Enter an noun:"),
-        verb: prompt("Enter an verb:"),
-        adverb: prompt("Enter an adverb:"),
-        bodyPart: prompt("Enter an body part:")
-    }
+  
+
+    const adjectives = [
+    prompt("Enter an adjective:"),
+    prompt("Enter another adjective:"),
+    prompt("Enter another adjective:"),
+    prompt("Enter another adjective:"),
+    prompt("Enter another adjective:"),
+    prompt("Enter another adjective:")
+    ]
+
+    const animals = [
+        prompt("Enter an animal:"),
+        prompt("Enter another animal:"),
+        prompt("Enter another animal:"),
+        prompt("Enter another animal:"),
+        prompt("Enter another animal:")
+    ]
+
+        const verbs = [
+        prompt("Enter an verb:"),
+        prompt("Enter another verb:"),
+        prompt("Enter another verb:"),
+        prompt("Enter another verb:"),
+        prompt("Enter another verb:"),
+        prompt("Enter another verb:")
+
+    ]
+
+        const adverbs = [
+        prompt("Enter an adverb:"),
+        prompt("Enter another adverb:"),
+        prompt("Enter another adverb:"),
+        prompt("Enter another adverb:"),
+        prompt("Enter another adverb:")
+    ]
+
+        const nouns = [
+        prompt("Enter an noun:"),
+        prompt("Enter another noun:"),
+        prompt("Enter another noun:"),
+        prompt("Enter another noun:"),
+        prompt("Enter another noun:"),
+        
+    ]
+
+        const bodyParts = [
+        prompt("Enter an body part:"),
+        prompt("Enter another body part:"),
+        prompt("Enter another body part:"),
+        prompt("Enter another body part:"),
+        prompt("Enter another body part:"),
+
+    ]
 
 const story = 
-`The ${words.adjective} day began with a strange feeling in the air.
-A ${words.animal} appeared outside the window.
+`The ${adjectives[0]} day began with a strange feeling in the air.
+A ${animals[0]}  appeared outside the window.
 It started to ${words.verb} without warning.
 Everything moved ${words.adverb} as the moment unfolded.
 A nearby ${words.noun} began to shake slightly.
-The sky turned ${words.adjective} as clouds gathered.
-Another ${words.animal} joined from the distance.
+The sky turned ${adjectives[1]} as clouds gathered.
+Another ${animals[1]}  joined from the distance.
 They began to ${words.verb} together in unison.
 Everything shifted ${words.adverb} around them.
 A ${words.noun} rolled across the ground.
-The air felt ${words.adjective} and tense.
-One ${words.animal} suddenly chose to ${words.verb}.
+The air felt ${adjectives[2]} and tense.
+One ${animals[2]} suddenly chose to ${words.verb}.
 The other followed ${words.adverb} behind it.
 A loud ${words.noun} echoed through everything.
 I felt it in my ${words.bodyPart}.
-The moment became more ${words.adjective}.
-Another ${words.animal} appeared from nowhere.
+The moment became more ${adjectives[4]}.
+Another ${animals[3]} appeared from nowhere.
 It started to ${words.verb} wildly.
 Everything changed ${words.adverb} after that.
 The final ${words.noun} settled the scene.`;
